@@ -1,0 +1,6 @@
+
+.todo {
+    width: calc(100%/3);
+    border: 1px black solid;
+    padding: 16px;
+}
