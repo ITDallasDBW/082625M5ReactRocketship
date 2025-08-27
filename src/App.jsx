@@ -7,12 +7,20 @@ function App() {
   return (
     <div>
       <Title />
+      <div>
+        <input type="text" onChange={(event) =>{
+          console.log(event.target.value)
+        }}/>
+        <button>Add todo</button>
+      </div>
         <div className="todo__wrapper">  
-          <Todo />
-          <Todo />
-          <Todo />
+          <Todo title="Finish Frontend Simplified"/>
+          <Todo title="Finish Interview Section"/>
+          <Todo title="Land a $100K Job"
+          />
         </div>
-        <Modal />
+        <Modal title="Are you sure you want to delete?"/>
+        {/* <Modal title="Are you sure you want to add?"/> */}
     </div>
   );
 }
