@@ -10,12 +10,9 @@ function App() {
 
 return (
       <Router>
-        <Nav />
         <Routes>
           <Route path="/" element={<Home />}/>
-          <Route path="/users/:username" element={<Users />} />
-          /* <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> */
+          <Route path="/users/:id" element={<Users />} />
         </Routes>
       </Router>
   );
@@ -23,7 +20,12 @@ return (
 
 export default App;
 
+// Removed in 1.9 API Integration
 
+          // <Route path="/about" element={<About />} />
+          // <Route path="/contact" element={<Contact />} />
+
+// From 1.8 React Routing:
         // <nav>
         //   <Link to="/">Home</Link>
         //   <Link to="/about">About</Link>
